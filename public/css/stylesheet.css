@@ -1,0 +1,40 @@
+* {margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 100%;}
+header, main, footer{width: 100%; float: left;display: flex;justify-content: center;}
+.center{width: 96%; max-width: 900px;display: flex;flex-wrap: wrap;gap: 60px;}
+.center section{width: 100%;}
+
+header{background: var(--preto);}
+header .alinha-menu{width: 100%;padding: 20px 0; display: flex; justify-content: space-between; align-items: center;}
+header .alinha-menu a{text-decoration: none;}
+header .alinha-menu .logo{padding: 8px 20px; display: flex; justify-content: center; align-items: center; background: var(--vermelho);}
+header .alinha-menu .logo p{color: var(--branco);}
+header .alinha-menu .botoes{display: flex;align-items: center;justify-content: center; gap: 20px;}
+header .alinha-menu .botoes .padrao{text-decoration: none; color: var(--branco);}
+
+main{min-height: 80vh;padding: 5vh 0 10vh;}
+main .alinha-main{width: 100%;padding: 20px 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 50px;align-items: stretch;}
+main .alinha-main .padrao{width: 25%;padding: 8px; display: flex; flex-wrap: wrap; gap: 20px; align-content: space-between; border: 1px solid #ddd}
+main .alinha-main .padrao .title{width:100%; text-align: center; padding: 8px 0;}
+main .alinha-main .padrao .bottom{width: 100%; display: flex;flex-direction: column;gap: 10px;}
+main .alinha-main .padrao .datas{width:100%; display: flex;flex-direction: column;gap: 10px;}
+main .alinha-main .padrao .datas .sub-title{width:100%;}
+main .alinha-main .padrao .vermais{width: 100%; display: flex; justify-content: center; align-items: center;}
+main .alinha-main .padrao .vermais .btn{transition: .2s; width: 100%; padding: 5px 20px; border-radius: 13px; font-weight: bold; text-align: center; color: var(--branco); background: var(--vermelho);}
+main .alinha-main .padrao .vermais .btn:hover{background: var(--preto);}
+main hr{width: 100%; height: 1px; background: #ddd; border: 0;}
+main .alinha-main .respostas{width: 100%; display: flex;flex-wrap: wrap; gap: 25px;}
+main .alinha-main .respostas .divresposta{width: 100%; border: 1px solid #ddd}
+main .alinha-main .respostas .divresposta.total{border: none}
+main .alinha-main .respostas .divresposta .infos{width: calc(100% - 10px); padding: 5px; display: flex; justify-content: space-between; align-items: center;}
+main .alinha-main .respostas .divresposta .infos .title{font-size: 20px; font-weight: bold;}
+main .alinha-main .respostas .divresposta .infos .dir {display: flex; align-items: center; gap: 30px;}
+main .alinha-main .respostas .divresposta .infos .dir .votos{font-size: 25px; font-weight: bold;}
+main .alinha-main .respostas .divresposta .infos .dir .btnvotar form button{transition: .2s;width: 100%;padding: 5px 20px;border-radius: 13px;font-weight: bold;text-align: center;color: var(--branco);background: var(--vermelho);border: none; cursor: pointer;}
+main .alinha-main .respostas .divresposta .infos .dir .btnvotar form button:hover{background: var(--preto);}
+main .alinha-main .respostas .divresposta .infos .dir .btnvotar form button.desativado{background: var(--preto); opacity: 0.7; cursor: no-drop;}
+main .alinha-main .respostas .divresposta .porcentagem{height: 6px; width: 100%; font-size: 0; border-top: 1px solid #ddd}
+main .alinha-main .respostas .divresposta .porcentagem .linha{transition: .1s; height: 100%; width: 0%; background: var(--vermelho); }
+
+footer{background: var(--preto);}
+footer .alinha-footer{width: 100%;padding: 20px 0;}
+footer .alinha-footer p{color: var(--branco);text-align: center;}
